@@ -1,0 +1,47 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.menu,
+li,
+a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 24px;
+  list-style-type: none;
+  text-decoration: none;
+}
+.hamburger {
+  display: none;
+  padding: 20px 20px;
+}
+
+.bg {
+  height: 200px;
+  width: 200px;
+  background-color: hotpink;
+  color: #e3e0cf;
+}
+
+@media only screen and (max-width: 648px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+  .menu,
+  li {
+    padding: 20px 0;
+    font-size: 32px;
+  }
+  .menu.show {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-size: 32px;
+  }
+}
